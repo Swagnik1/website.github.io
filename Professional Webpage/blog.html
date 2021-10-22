@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBPAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/4a44f91575.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="#"><img src="Swaggy.png"></a>
+            <div class="nav-links"id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">DETAILS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Ratings of Games I have Played</h1>
+    </section>
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="pexel4.jpg">
+                <h2>Games I have Played</h2>
+                <p>I have tried different types of games. I play PC Games and Mobile Games. In this blog I have only reviewd the PC Games. If you guys want to know my ratings about mobile games let me know in the comments.</p>
+                <br>
+                <p>Let me know if you guys want me to add about any other games or things I should add to these blog.</p>
+                <br>
+                <p>These ratings are totaly made by me. None of these ratings are made to show/put down any of these games. These ratings were made totally how I felt after trying out each games.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="button blue-btn"><i class="fa fa-paper-plane"></i> POST COMMENT</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="blog-right">
+                <h3>Rating of Games</h3>
+                <div>
+                    <span>APEX LEGENDS</span>
+                    <span>4.5/5</span>
+                </div>
+                <div>
+                    <span>VALORANT</span>
+                    <span>4.5/5</span>
+                </div>
+                <div>
+                    <span>Call of Duty Warzone</span>
+                    <span>4.2/5</span>
+                </div>
+                <div>
+                    <span>Splitgate</span>
+                    <span>3.5/5</span>
+                </div>
+                <div>
+                    <span>Rogue Company</span>
+                    <span>3.9/5</span>
+                </div>
+                <div>
+                    <span>GTA V</span>
+                    <span>4.5/5</span>
+                </div>
+                <div>
+                    <span>Fortnite</span>
+                    <span>4.2/5</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <h4>Thank You For Visiting My WebPage</h4>
+        <div class="icons">
+            <a href="https://discord.gg/9DtYAG4f" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://twitter.com/wadu_hek_XD" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/swagnikdutta1995/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/swagnik-dutta-390768ab/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>Made with <i class="fas fa-heart"></i> by Swagnik</p>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

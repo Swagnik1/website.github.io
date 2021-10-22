@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBPAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/4a44f91575.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="#"><img src="Swaggy.png"></a>
+            <div class="nav-links"id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">DETAILS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>WELCOME TO MY WEBPAGE</h1>
+            <P>THIS IS MY FIRST WEBPAGE USING HTML AND CSS</P>
+            <a href="about.html" class="button">VISIT US TO KNOW MORE</a>
+        </div>
+    </section>
+    <section class="course">
+        <h1>Computer Languages That I am Learning</h1>
+        <p>These are the computer languages that I am learning right now</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>HTML</h3>
+                <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            </div>
+            <div class="course-col">
+                <h3>CSS</h3>
+                <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+            </div>
+            <div class="course-col">
+                <h3>Java Script</h3>
+                <p>JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions. Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.</p>
+            </div>
+        </div>
+    </section>
+    <section class="campus">
+        <h1>Top Three Games</h1>
+        <p>These are the top three games that I like</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="apex.jpg">
+                <div class="layer">
+                    <h3>APEX LEGEND</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="VALORANT.jpg">
+                <div class="layer">
+                    <h3>VALORANT</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="GTAV.jpg">
+                <div class="layer">
+                    <h3>GTA V</h3>
+                </div>
+            </div>        
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h1>What My Visitors Says</h1>
+        <p>The Comments Made by my Visitors</p>
+
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="user1.jpg">
+                <div>
+                    <p>Nice Website</p>
+                    <h3>Christine Berkley</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="user2.jpg">
+                <div>
+                    <p>Great Work!!</p>
+                    <h3>David Byer</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="club2.jpg">
+                <div>
+                    <p>Well Done</p>
+                    <h3>Shubham Mandal</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h1>For any kind of Help or Work</h1>
+        <a href="contact.html" class="button">CONTACT ME</a>
+    </section>
+
+    <section class="footer">
+        <h4>Thank You For Visiting My WebPage</h4>
+        <div class="icons">
+            <a href="https://discord.gg/9DtYAG4f" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://twitter.com/wadu_hek_XD" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/swagnikdutta1995/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/swagnik-dutta-390768ab/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>Made with <i class="fas fa-heart"></i> by Swagnik</p>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

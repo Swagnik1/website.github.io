@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBPAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/4a44f91575.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="#"><img src="Swaggy.png"></a>
+            <div class="nav-links"id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">DETAILS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Me</h1>
+    </section>
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Hi!! My name is Swagnik</h1>
+                <p>My name is Swagnik Dutta. I am from West Bengal, India. I love to learn new things. I am currently studying B.Tech in Computer Science and Engineering at Adamas University, Kolkata, India. I love to play games and learn different computer languages when I get free time. I am currently learning web development by myself. I want to become a excellent coder and start my own startup later.</p>
+                <a href="course.html" class="button blue-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="profile.jpg">
+            </div>
+        </div>
+
+    </section>
+    
+    <section class="footer">
+        <h4>Thank You For Visiting My WebPage</h4>
+        <div class="icons">
+            <a href="https://discord.gg/9DtYAG4f" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://twitter.com/wadu_hek_XD" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/swagnikdutta1995/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="www.linkedin.com/in/swagnik-dutta" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>Made with <i class="fas fa-heart"></i> by Swagnik</p>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
